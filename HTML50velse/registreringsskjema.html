@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skjema</title>
+
+</head>
+<body>
+    <header><h1>Nettside Mal</h1>
+        <nav>
+            <ul>
+                <li><a href="../HTML50velse/Index.html">Hjem</a></li>  
+              <li><a href="../HTML50velse/Oppgave1.html">Validering</a></li>   
+                <li><a href="Mal.html">Nettside Mal</a></li> 
+                <li><a href="Kontakt.html">Kontakt Oss</a></li> 
+            </ul>
+           </nav>
+
+
+ </header>
+
+
+ <main>
+
+    <form><ul>
+        <label >
+             <ol>Navn: <input type="text" name="navn" placeholder="Per Olav" pattern="[A-Za-zæøåÆØÅ ]{2,}" required></ol>
+        </label>
+        
+        <label>
+             <ol>Epost: <input type="email" name="epost" placeholder="eksempel@hiof.no" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required></ol>
+        </label>
+
+        <label>
+             <ol>Passord: <input type="password" name="passord" placeholder="Minimum 8 tegn" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required> </ol>
+        </label>
+
+        <label>
+             <ol>Alder: <input type="number" name="alder" placeholder="Alder" min="18" max="99" required></ol>
+        </label>
+
+        <label>
+             <ol>Telefon-Nummer: <input type="number" name="Telefon" pattern="[0-9]{8,12}" required></ol>
+            </label>
+
+            <label>
+             <ol>Fødselsdato: <input type="date" name="Fødselsdato" max="2023-12-31" required></ol>
+            </label>
+
+            <label>
+             <ol>Kjønn: 
+                <label > <input type="radio" name="Valg" required>Mann</label>
+                <label > <input type="radio" name="Valg" required>Kvinne</label>
+                <label > <input type="radio" name="Valg" required>Annet</label>
+               
+            </label>
+            <label >
+                <ol>Land: 
+                <select>
+                    <option value="Norge" required>Norge</option>
+                    <option value="Sverige" required>Sverige</option>
+                    <option value="Danmark" required>Danmark</option>
+                </select>
+                
+                </ol>
+            </label>
+            <label>
+               <ol>Kryss dette for å fortsette → <input type="checkbox" name="Avkryssning" required>
+            </ol> 
+            </label>
+            <label>
+                <input type="submit" value="Submit" >
+            </label>
+
+            </ul>
+       
+    </form>
+
+</main>
+ <footer>
+    <p>Kontakt meg på epost: <a href="mailto:abdallaa@hiof.no">Epost</a></p>
+    <h1>2024 Abdallah</h1>
+</footer>
+</body>
+</html>
