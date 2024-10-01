@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skjema</title>
+    <title>RegistreringSkjema</title>
 
 </head>
 <body>
@@ -23,57 +23,58 @@
 
  <main>
 
-    <form><ul>
-        <label >
-             <ol>Navn: <input type="text" name="navn" placeholder="Per Olav" pattern="[A-Za-zæøåÆØÅ ]{2,}" required></ol>
+    <form>
+        <label>
+             Navn: <input type="text" name="navn" placeholder="Per Olav" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
         </label>
         
         <label>
-             <ol>Epost: <input type="email" name="epost" placeholder="eksempel@hiof.no" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required></ol>
+             Epost: <input type="email" name="epost" placeholder="eksempel@hiof.no" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
         </label>
 
         <label>
-             <ol>Passord: <input type="password" name="passord" placeholder="Minimum 8 tegn" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required> </ol>
+             Passord: <input type="password" name="passord" placeholder="Minimum 8 tegn" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
         </label>
 
         <label>
-             <ol>Alder: <input type="number" name="alder" placeholder="Alder" min="18" max="99" required></ol>
+             Alder: <input type="number" name="alder" placeholder="Alder" min="18" max="99" required>
         </label>
 
         <label>
-             <ol>Telefon-Nummer: <input type="number" name="Telefon" pattern="[0-9]{8,12}" required></ol>
+             Telefon-Nummer: <input type="number" name="Telefon" pattern="[0-9]{8,12}" required>
             </label>
 
-            <label>
-             <ol>Fødselsdato: <input type="date" name="Fødselsdato" max="2023-12-31" required></ol>
+            <label> <br>
+             Fødselsdato: <input type="date" name="Fødselsdato" max="2023-12-31" required>
             </label>
 
-            <label>
-             <ol>Kjønn: 
+            <label>                                                                                                                                                                                                                 <br>
+             Kjønn: 
                 <label > <input type="radio" name="Valg" required>Mann</label>
                 <label > <input type="radio" name="Valg" required>Kvinne</label>
                 <label > <input type="radio" name="Valg" required>Annet</label>
                
             </label>
             <label >
-                <ol>Land: 
+                <br>
+                Land: 
                 <select>
                     <option value="Norge" required>Norge</option>
                     <option value="Sverige" required>Sverige</option>
                     <option value="Danmark" required>Danmark</option>
                 </select>
                 
-                </ol>
+               
+            </label>
+            <label> <br>
+               Kryss dette for å fortsette → <input type="checkbox" name="Avkryssning" required> <br>
+         
             </label>
             <label>
-               <ol>Kryss dette for å fortsette → <input type="checkbox" name="Avkryssning" required>
-            </ol> 
-            </label>
-            <label>
-                <input type="submit" value="Submit" >
+                <input type="submit" value="Trykk Submit" >
             </label>
 
-            </ul>
+        
        
     </form>
 
