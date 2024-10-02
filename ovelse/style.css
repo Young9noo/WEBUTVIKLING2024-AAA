@@ -1,0 +1,147 @@
+/* Generelle stiler for body og grunnleggende layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header-stiler med bakgrunnsbilde */
+header {
+    background-image: url('slime.jpg'); /* Sett inn riktig bakgrunnsbilde */
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Gjør bakgrunnen til h1 semi-transparent */
+    display: inline-block;
+}
+
+/* Navigasjon-stiler */
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Layout for main og aside */
+main, aside {
+    padding: 20px;
+}
+
+main {
+    flex: 3;
+    max-width: 70%;
+    margin-right: 20px;
+}
+
+aside {
+    flex: 1;
+    background-color: #f1f1f1;
+    min-width: 300px;
+
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    main {
+        margin-right: 0;
+        max-width: 100%;
+    }
+
+    aside {
+        max-width: 100%;
+    }
+}
+
+/* Bokser for artikler i hovedinnhold */
+article {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Lett boks-skygge */
+    border-radius: 8px; /* Litt avrundede hjørner */
+    flex: 1;
+    max-width: 60%; /* Gjør boksen 30% av tilgjengelig bredde */
+    text-align: center;
+}
+
+/* Flex layout for artiklene i main */
+main section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1px; /* Legg litt avstand mellom boksene */
+    height: 150px;
+    padding-top: 50px;
+    
+}
+
+@media (max-width: 768px) {
+    article {
+        max-width: 100%; /* På smale skjermer fyller artiklene hele bredden */
+    }
+}
+
+/* Footer-stiler */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+footer a {
+    color: #ff5722;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
