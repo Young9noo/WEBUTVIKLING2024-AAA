@@ -1,4 +1,4 @@
-/* Generelle stiler for body og grunnleggende layout */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,29 +6,33 @@ body {
     box-sizing: border-box;
 }
 
-/* Header-stiler med bakgrunnsbilde */
 header {
-    background-image: url('slime.jpg'); /* Sett inn riktig bakgrunnsbilde */
-    background-size: cover;
+    background-image: url('slime.jpg'); 
+    background-size:cover;
     background-position: center;
     padding: 60px 20px;
     text-align: center;
     color: white;
     text-transform: uppercase;
     position: relative;
+    max-width: 100%;
+ 
+    
 }
+
 
 header h1 {
     font-size: 3rem;
     margin: 0;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5); /* Gjør bakgrunnen til h1 semi-transparent */
+    background-color: rgba(0, 0, 0, 0.5); 
     display: inline-block;
 }
 
-/* Navigasjon-stiler */
+
 nav {
     background-color: #333;
+
 }
 
 nav ul {
@@ -38,6 +42,9 @@ nav ul {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 20px
+    
+    
 }
 
 nav ul li {
@@ -51,6 +58,7 @@ nav ul li a {
     display: block;
     font-size: 1.2rem;
     transition: background-color 0.3s ease;
+    
 }
 
 nav ul li a:hover {
@@ -58,21 +66,24 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
-/* Layout for main og aside */
+
 main, aside {
     padding: 20px;
+    flex-wrap: wrap;
 }
 
 main {
     flex: 3;
     max-width: 70%;
     margin-right: 20px;
+    position: sticky
 }
 
 aside {
-    flex: 1;
+    flex: auto;
     background-color: #f1f1f1;
-    min-width: 300px;
+    min-width: 60   px;
+    flex-basis: auto;
 
 }
 
@@ -80,53 +91,40 @@ aside {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 1200px;
+    max-width: auto;
     margin: 20px auto;
 }
 
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
 
-    main {
-        margin-right: 0;
-        max-width: 100%;
-    }
 
-    aside {
-        max-width: 100%;
-    }
-}
-
-/* Bokser for artikler i hovedinnhold */
 article {
     background-color: #fff;
     padding: 20px;
     margin: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Lett boks-skygge */
-    border-radius: 8px; /* Litt avrundede hjørner */
-    flex: 1;
-    max-width: 60%; /* Gjør boksen 30% av tilgjengelig bredde */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px; 
+    flex: basis;
+    max-width: 60%; 
     text-align: center;
+
 }
 
-/* Flex layout for artiklene i main */
+
 main section {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 1px; /* Legg litt avstand mellom boksene */
+    gap: 1px; 
     height: 150px;
     padding-top: 50px;
     
 }
 
-@media (max-width: 768px) {
-    article {
-        max-width: 100%; /* På smale skjermer fyller artiklene hele bredden */
-    }
+aside a{
+    color: black;
 }
+
+
 
 /* Footer-stiler */
 footer {
@@ -135,10 +133,12 @@ footer {
     text-align: center;
     padding: 10px;
     width: 100%;
+
+
 }
 
 footer a {
-    color: #ff5722;
+    color: white;
     text-decoration: none;
 }
 
