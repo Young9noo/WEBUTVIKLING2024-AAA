@@ -8,28 +8,24 @@ body {
 
 #grid-container {
     display: grid;
-    grid-template-columns: 0.5 0.5 3fr 0.5fr; 
+    grid-template-columns: 0.5fr 3fr 0.5fr; 
     grid-template-rows: auto 1fr 1fr auto; 
     height: 100vh; 
     background-color: inherit;
 }
 
-#img{
+header {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    background-image: url('slime.jpg'); 
     background-size:cover;
     background-position: center;
-    padding: 60px 20px;
-    display: grid;
-}
-
-header {
+    max-width: 100%;
     padding: 60px 20px;
     text-align: center;
     color: white;
     text-transform: uppercase;
     position: relative;
-    max-width: 100%;
- 
-    
 }
 
 
@@ -43,6 +39,8 @@ header h1 {
 
 
 nav {
+    grid-column: 1 / 4;
+    grid-row: 2 / 4;
     background-color: #333;
 
 }
