@@ -1,124 +1,114 @@
 body {
-    font-family: 'Arial', 'Helvetica', sans-serif; /* Bruker en sans-serif font */
-    margin: 0; /* Fjerner standard margin for body */
+    font-family: 'Arial', 'Helvetica', sans-serif; 
+    margin: 0;  
     background-color: rgb(153, 196, 196);
  
 }
 
 #grid-container {
     display: grid;
-    grid-template-columns: 0.5fr 3fr 0.5fr; /* 3 kolonner med spesifisert størrelse */
-    grid-template-rows: auto 1fr 1fr auto; /* 4 rader, 1. rad auto, 2. rad tar tilgjengelig plass, 3. rad auto */
-    height: 100vh; /* Får grid-container til å dekke hele høyden av skjermen */
+    grid-template-columns: 0.5fr 3fr 0.5fr; 
+    grid-template-rows: auto 1fr 1fr auto; 
+    height: 100vh; 
     background-color: inherit;
 }
 
 header {
-    grid-column: 1 / 4; /* Header tar hele første rad */
+    grid-column: 1 / 4; 
     grid-row: 1 / 2;
-    display: flex; /* Bruker Flexbox for innholdet i headeren */
-    flex-direction: column; /* Vertikal retning */
-    justify-content: space-between; /* Luft mellom logo og navigasjon */
-    align-items: center; /* Sentrerer innholdet horisontalt */
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    align-items: center; 
     background-color: rgb(153, 196, 196);
-    padding: 20px; /* Liten padding */
-    border-radius: 10px; /* Runde hjørner */
+    padding: 20px;  
+    border-radius: 10px;  
    
     
 }
 
 nav {
-    grid-column: 1 / 4; /* Navigasjon tar hele andre rad */
+    grid-column: 1 / 4; 
     grid-row: 2 / 3;
-    display: flex; /* Bruker Flexbox for navigasjonen */
-    justify-content: space-around; /* Jevnt fordelt mellom elementene */
+    display: flex;  
+    justify-content: space-around; 
     background-color: rgb(169, 134, 134);
-    padding: 15px; /* Liten padding */
-    border-radius: 10px; /* Runde hjørner */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Skyggeeffekt */
-}
+    padding: 15px;  
+    border-radius: 10px;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  }
 
 nav ul {
-    list-style: none; /* Fjerner kulepunkter fra listen */
-    padding: 0; /* Fjerner padding fra ul */
-    display: flex; /* Bruker Flexbox for å ordne lenkene horisontalt */
-    gap: 1rem; /* Avstand mellom lenkene */
+    list-style: none; 
+    padding: 0;  
+    display: flex; 
+    gap: 1rem;  
 }
 
 nav a {
-    text-decoration: none; /* Fjerner understrek fra lenker */
-    color: white; /* Farge på teksten */
-    font-weight: bold; /* Fet tekst for lenkene */
-    transition: color 0.3s; /* Overgangseffekt ved hover */
+    text-decoration: none; 
+    color: white;   
+    font-weight: bold; 
+    transition: color 0.3s; 
 }
 
 nav a:hover {
-    color: #ffeb3b; /* Farge ved hover */
+    color: #ffeb3b; 
 }
 
 main {
-    grid-column: 2 / 3; /* Main tar midtkolonnen */
+    grid-column: 2 / 3; 
     grid-row: 3 / 4;
-    display: grid; /* Bruker grid for sub-grid i main */
-    grid-template-columns: repeat(4, 1fr); /* 4 kolonner i sub-grid */
-    grid-template-rows: repeat(4, 1fr); /* 4 rader i sub-grid */
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(4, 1fr); 
     background-color:  rgb(153, 196, 196);
-    padding: 10px; /* Liten padding */
-    gap: 2px; /* Lagt til gap mellom rader og kolonner i grid */
+    padding: 10px; 
+    gap: 2px; 
 }
 
-aside {
-    grid-column: 3 / 4; /* Sideområdet tar tredje kolonne */
-    grid-row: 3 / 4;
-    background-color: rgb(211, 187, 159);
-    padding: 20px; /* Liten padding */
-    border-radius: 10px; /* Runde hjørner */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Skyggeeffekt */
-}
+
 
 footer {
-    grid-column: 1 / 4; /* Footer tar hele siste rad */
+    grid-column: 1 / 4; 
     grid-row: 4 / 5;
     background-color: rgb(77, 77, 77);
-    padding: 10px; /* Liten padding */
-    text-align: center; /* Sentrerer tekst i footer */
-    border-radius: 10px; /* Runde hjørner */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Skyggeeffekt */
+    padding: 10px;
+    text-align: center; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 h1, h2, h4 {
-    margin: 0; /* Fjerner standard margin for overskrifter */
-    color: #333; /* Mørk tekstfarge for overskrifter */
+    margin: 0;
+    color: #333; 
 }
 
 h2 {
-    margin-bottom: 20px; /* Avstand under h2 */
+    margin-bottom: 20px; 
+    margin-top: 58px;
 }
-
-/* Stiling for seksjoner i main */
 section {
-    background-color: white; /* Hvit bakgrunn for seksjoner */
+    background-color: white; 
     display: flex;
     justify-content: flex-start; 
     align-items: flex-end;
-    border-radius: 10px; /* Runde hjørner */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Mild skyggeeffekt */
-    padding: 20px; /* Padding for innholdet */
-    margin: 5px; /* Lagt til margin for space mellom seksjonene */
-    transition: transform 0.3s; /* Overgangseffekt ved hover */
+    border-radius: 10px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+    margin: 5px; 
+    transition: transform 0.3s; 
 }
 
 section:hover {
-    transform: scale(1.05); /* Forstørrer seksjon ved hover */
+    transform: scale(1.05); 
 }
 
-/* Tilpasset font */
 h1, h2, h4 {
-    font-family: 'Arial', 'Helvetica', sans-serif; /* Kan byttes til en annen font */
+    font-family: 'Arial', 'Helvetica', sans-serif; 
 }
 
 p {
-    color: white; /* Farge for paragraf */
+    color: white; 
 }
 #logo{
     width: 15%;
