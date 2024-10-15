@@ -1,0 +1,15 @@
+@import 'colors.scss';
+form{
+    background-color: $white;
+    padding: 3rem;
+    color: $black;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    gap: 0.5rem ;
+}
+
+input{
+    padding: 1rem;
+    border: 1px solid black;
+}

@@ -84,7 +84,7 @@ header {
 nav {
     grid-column: 1 / 4; 
     grid-row: 2 / 3;
-    display: flex;  
+    display: grid;  
     justify-content: space-around; 
     background-color: rgb(169, 134, 134);
     padding: 15px;  
@@ -125,6 +125,7 @@ main {
 footer {
     grid-column: 1 / 4; 
     grid-row: 4 / 5;
+    display: grid;
     background-color: rgb(77, 77, 77);
     padding: 10px;
     text-align: center; 

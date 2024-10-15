@@ -94,6 +94,7 @@ main {
     grid-template-columns: repeat(4, 1fr); 
     grid-template-rows: repeat(4, 1fr); 
     display: grid;
+    flex-direction: column; 
     max-width: 70%;
     margin-right: 20px;
     position: relative ;
